@@ -4,7 +4,7 @@ import type { Testimonial } from '@/data/testimonials'
 
 export function TestimonialCard({ name, role, company, quote, initials, accent }: Testimonial) {
   return (
-    <Card className="relative h-full bg-foreground/[0.03] border-foreground/10 hover:border-fuchsia-500/30 transition">
+    <Card className="relative h-full bg-card border-foreground/10 hover:border-fuchsia-500/30 transition">
       <CardContent className="p-6 sm:p-7">
         <Quote className="h-7 w-7 text-fuchsia-500/40 dark:text-fuchsia-300/40 mb-4" />
         <p className="text-foreground/90 leading-relaxed">{quote}</p>

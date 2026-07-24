@@ -18,7 +18,7 @@ export function Contact() {
   return (
     <section id="contact" className="py-24 relative">
       <div className="absolute inset-0 -z-10">
-        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-200 h-100 bg-[radial-gradient(ellipse_at_center,_rgba(217,70,239,0.15),_transparent_70%)]" />
+        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-200 h-100 bg-[radial-gradient(ellipse_at_center,rgba(217,70,239,0.15),transparent_70%)]" />
       </div>
       <div className="container">
         <div className="grid lg:grid-cols-2 gap-12 items-start">
@@ -37,7 +37,7 @@ export function Contact() {
                   rel="noreferrer"
                   className="flex items-center gap-3 group"
                 >
-                  <div className="h-11 w-11 rounded-lg bg-foreground/5 border border-foreground/10 flex items-center justify-center group-hover:bg-fuchsia-500/10 group-hover:border-fuchsia-500/30 transition">
+                  <div className="h-11 w-11 rounded-lg bg-muted border border-foreground/10 flex items-center justify-center group-hover:bg-fuchsia-500/10 group-hover:border-fuchsia-500/30 transition">
                     <r.icon className="h-4 w-4" />
                   </div>
                   <div>

@@ -1,16 +1,18 @@
 import Link from 'next/link'
 import { notFound } from 'next/navigation'
-import { POSTS, POST_BODY } from '@/lib/posts'
+import { POSTS, POST_BODY } from '@/data/posts'
 import { ArrowLeft, CalendarDays, Clock } from 'lucide-react'
 
-export async function generateMetadata({ params }: { params: { slug: string } }) {
-  const post = POSTS.find((p) => p.slug === params.slug)
+export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }) {
+  const resolvedParams = await params
+  const post = POSTS.find((p) => p.slug === resolvedParams.slug)
   if (!post) return { title: 'Not found' }
   return { title: `${post.title} — Mashud Ahmed`, description: post.excerpt }
 }
 
-export default function BlogPost({ params }: { params: { slug: string } }) {
-  const post = POSTS.find((p) => p.slug === params.slug)
+export default async function BlogPost({ params }: { params: Promise<{ slug: string }> }) {
+  const resolvedParams = await params
+  const post = POSTS.find((p) => p.slug === resolvedParams.slug)
   if (!post) return notFound()
   const body = POST_BODY[post.slug as keyof typeof POST_BODY] || []
 
@@ -31,7 +33,7 @@ export default function BlogPost({ params }: { params: { slug: string } }) {
         <p className="mt-4 text-lg text-muted-foreground">{post.excerpt}</p>
         <div className="mt-4 flex flex-wrap gap-2">
           {post.tags.map((t) => (
-            <span key={t} className="px-2 py-0.5 text-xs rounded-md bg-foreground/5 border border-foreground/10">{t}</span>
+            <span key={t} className="px-2 py-0.5 text-xs rounded-md bg-muted border border-foreground/10">{t}</span>
           ))}
         </div>
 

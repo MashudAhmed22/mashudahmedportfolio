@@ -15,8 +15,8 @@ export function OrbitRing() {
         {ORBIT_TECHS.map((t, i) => {
           const angle = (i / ORBIT_TECHS.length) * Math.PI * 2
           const r = 200
-          const x = Math.cos(angle) * r
-          const y = Math.sin(angle) * r
+          const x = Math.round(Math.cos(angle) * r)
+          const y = Math.round(Math.sin(angle) * r)
           return (
             <motion.div
               key={t}
@@ -25,7 +25,7 @@ export function OrbitRing() {
               animate={{ rotate: -360 }}
               transition={{ duration: 40, repeat: Infinity, ease: 'linear' }}
             >
-              <div className="px-3 py-1.5 rounded-full text-xs font-medium bg-foreground/5 border border-foreground/10 backdrop-blur-sm text-muted-foreground whitespace-nowrap">
+              <div className="px-3 py-1.5 rounded-full text-xs font-medium bg-muted border border-foreground/10 backdrop-blur-sm text-muted-foreground whitespace-nowrap">
                 {t}
               </div>
             </motion.div>

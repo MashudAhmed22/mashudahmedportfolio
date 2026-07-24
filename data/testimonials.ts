@@ -9,8 +9,8 @@ export type Testimonial = {
 
 export const TESTIMONIALS: Testimonial[] = [
   {
-    name: 'Priya Sharma',
-    role: 'Engineering Manager',
+    name: 'Abhay Singh',
+    role: 'Tech Lead',
     company: 'iTCart',
     quote:
       'Mashud is one of those rare engineers who cares deeply about the user experience and the codebase. He shipped our most complex frontend module with elegance.',
@@ -18,7 +18,7 @@ export const TESTIMONIALS: Testimonial[] = [
     accent: 'from-violet-500 to-fuchsia-500',
   },
   {
-    name: 'Ahmed Khalid',
+    name: 'Ruhul Amin',
     role: 'Product Lead',
     company: 'TechNetME',
     quote:
@@ -27,7 +27,7 @@ export const TESTIMONIALS: Testimonial[] = [
     accent: 'from-cyan-500 to-blue-500',
   },
   {
-    name: 'Rahul Verma',
+    name: 'Vishal Ghoyal',
     role: 'Founder',
     company: 'Clouwood Studio',
     quote:

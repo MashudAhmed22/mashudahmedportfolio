@@ -1,12 +1,12 @@
 export const RESUME_URL =
-  './Mashud_Ahmed_Resume.pdf'
+  '/Mashud_Ahmed_Resume.pdf'
 
 export const PROFILE = {
   name: 'Mashud Ahmed',
   role: 'Software Engineer · Full Stack Developer',
   location: 'Bengaluru, India',
-  email: 'mashud.hojai@gmail.com',
-  phone: '+91 9678062213',
+  email: 'mashud.devx@gmail.com',
+  phone: '+919678062213',
   linkedin: 'https://www.linkedin.com/in/mashudahmed/',
   github: 'https://github.com/MashudAhmed22',
   summary:

@@ -1,4 +1,4 @@
-import { GraduationCap, Globe, Smartphone } from 'lucide-react'
+import { GraduationCap, Globe, Smartphone, HeartPulse } from 'lucide-react'
 import type { LucideIcon } from 'lucide-react'
 
 export type Project = {
@@ -8,6 +8,7 @@ export type Project = {
   tech: string[]
   icon: LucideIcon
   accent: string
+  link?: string
 }
 
 export const PROJECTS: Project[] = [
@@ -25,9 +26,41 @@ export const PROJECTS: Project[] = [
     tagline: 'High-performance corporate site',
     description:
       "Built the company's main website using Next.js — SEO-optimised, fully responsive, with secure API routes powering contact forms and email submissions.",
-    tech: ['Next.js', 'Tailwind CSS', 'API Routes'],
+    tech: [
+      'Next.js',
+      'TypeScript',
+      'React.js',
+      'Tailwind CSS',
+      'REST APIs',
+      'Node.js',
+      'Git',
+      'Vercel',
+      'SEO',
+      'SSR',
+    ],
     icon: Globe,
     accent: 'from-cyan-500/20 to-blue-500/20',
+    link: "https://www.technetme.com/"
+  },
+  {
+    name: 'Flexora — Physiotherapy Clinic Website',
+    tagline: 'Better Care. Better Experience.',
+    description:
+      'Built a production-ready healthcare website with Next.js 15 and App Router, featuring 11 responsive routes, centralized typed content configuration, SEO and accessibility optimizations, responsive design, image optimization, and code splitting, achieving 90+ Lighthouse scores.',
+    tech: [
+      'Next.js 15',
+      'React',
+      'TypeScript',
+      'App Router',
+      'Tailwind CSS',
+      'SEO',
+      'Accessibility',
+      'Responsive Design',
+      'Image Optimization',
+    ],
+    icon: HeartPulse,
+    accent: 'from-emerald-500/20 to-teal-500/20',
+    link: "https://flexora-physiotherapy-center-seven.vercel.app/"
   },
   {
     name: 'Car Washer Mobile App',
@@ -36,6 +69,22 @@ export const PROJECTS: Project[] = [
       'A React Native app to schedule, track and manage car-washing services. Firebase Auth, real-time booking, status updates, SQLite offline data. Integrated Razorpay for secure payments.',
     tech: ['React Native', 'Firebase Auth', 'SQLite', 'Razorpay'],
     icon: Smartphone,
-    accent: 'from-emerald-500/20 to-teal-500/20',
+    accent: 'from-cyan-500/20 to-blue-500/20',
+    link: "https://www.unclecarwasher.com/"
+  },
+  {
+    name: 'VidFlow Mobile App',
+    tagline: 'Secure. Organize. Access. Anywhere.',
+    description:
+      'A cloud-based file storage and content management mobile application that enables users to securely upload, organize, access, and manage digital assets. Developed reusable mobile UI screens, integrated REST APIs for file operations and authentication, and implemented SQLite for local caching and offline access.',
+    tech: [
+      'React Native',
+      'TypeScript',
+      'SQLite',
+      'REST APIs',
+    ],
+    icon: Smartphone,
+    accent: 'from-cyan-500/20 to-blue-500/20',
+    link: 'https://vidflow.co/',
   },
 ]

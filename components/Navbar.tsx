@@ -33,7 +33,7 @@ export function Navbar() {
             <a
               key={n.href}
               href={n.href}
-              className="px-3 py-2 text-sm text-muted-foreground hover:text-foreground transition rounded-md hover:bg-foreground/5"
+              className="px-3 py-2 text-sm text-muted-foreground hover:text-foreground transition rounded-md hover:bg-muted-foreground/10"
             >
               {n.label}
             </a>
@@ -49,7 +49,7 @@ export function Navbar() {
 
         <div className="lg:hidden flex items-center gap-2">
           <ThemeToggle />
-          <button className="p-2 rounded-md hover:bg-foreground/5" onClick={() => setOpen(!open)} aria-label="menu">
+          <button className="p-2 rounded-md hover:bg-muted-foreground/10" onClick={() => setOpen(!open)} aria-label="menu">
             {open ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
           </button>
         </div>
@@ -63,7 +63,7 @@ export function Navbar() {
                 key={n.href}
                 href={n.href}
                 onClick={() => setOpen(false)}
-                className="px-3 py-2 text-sm rounded-md hover:bg-foreground/5"
+                className="px-3 py-2 text-sm rounded-md hover:bg-muted-foreground/10"
               >
                 {n.label}
               </a>
@@ -73,7 +73,7 @@ export function Navbar() {
               target="_blank"
               rel="noreferrer"
               download
-              className="px-3 py-2 text-sm rounded-md hover:bg-foreground/5 flex items-center gap-2"
+              className="px-3 py-2 text-sm rounded-md hover:bg-muted-foreground/10 flex items-center gap-2"
             >
               <Download className="h-4 w-4" /> Download Resume
             </a>

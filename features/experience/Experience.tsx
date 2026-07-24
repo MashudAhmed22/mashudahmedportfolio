@@ -12,10 +12,14 @@ export function Experience() {
           description="My journey building products across India and the Middle East — newest first."
         />
         <div className="relative max-w-6xl mx-auto">
-          <div className="absolute md:left-1/2 left-4 md:-translate-x-1/2 top-2 bottom-2 w-px bg-gradient-to-b from-fuchsia-500/50 via-foreground/10 to-transparent" aria-hidden />
           <div className="space-y-12 md:space-y-20">
             {EXPERIENCE.map((e, idx) => (
-              <ExperienceCard key={e.company} item={e} isLeft={idx % 2 === 0} />
+              <ExperienceCard
+                key={e.company}
+                item={e}
+                isLeft={idx % 2 === 0}
+                isLast={idx === EXPERIENCE.length - 1}
+              />
             ))}
           </div>
         </div>

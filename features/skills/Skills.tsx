@@ -11,7 +11,7 @@ export function Skills() {
         <SectionHeader
           kicker="Skills"
           title="Tools I build with."
-          description="A curated stack I've used in production across the last 2+ years."
+          description="A curated stack I've used in production across the last 3+ years."
         />
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
           {SKILLS.map((s, i) => (

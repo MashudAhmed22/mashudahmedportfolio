@@ -20,7 +20,7 @@ export function ContactForm() {
             <Input
               value={form.name}
               onChange={setField('name')}
-              placeholder="Mashud Ahmed"
+              placeholder="Alex Rivera"
               className="mt-1 bg-muted border-foreground/10"
             />
           </div>
@@ -30,7 +30,7 @@ export function ContactForm() {
               type="email"
               value={form.email}
               onChange={setField('email')}
-              placeholder="mashud@company.com"
+              placeholder="alex@acme.com"
               className="mt-1 bg-muted border-foreground/10"
             />
           </div>

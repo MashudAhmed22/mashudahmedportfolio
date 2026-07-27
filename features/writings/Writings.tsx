@@ -22,7 +22,7 @@ export function Writings() {
             <Reveal key={p.slug} delay={i * 0.08}>
               <Link href={`/blog/${p.slug}`} className="group block h-full ">
                 <Card className="relative overflow-hidden bg-card border-foreground/10 hover:border-fuchsia-500/40 transition-all duration-300 hover:-translate-y-1 h-full ">
-                  <div className={`absolute inset-0 bg-gradient-to-br ${p.cover} opacity-0 group-hover:opacity-100 transition`} />
+                  <div className={`absolute inset-0 bg-linear-to-br ${p.cover} opacity-0 group-hover:opacity-100 transition`} />
                   <div className="relative ">
                     <CardHeader>
                       <div className="flex items-center gap-3 text-xs text-muted-foreground ">

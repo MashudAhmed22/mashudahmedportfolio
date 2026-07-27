@@ -15,7 +15,7 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: 'Mashud Ahmed — Full Stack Developer',
-  description: 'Portfolio of Mashud Ahmed, Full Stack Developer specialising in React, Next.js, Node.js and React Native.',
+  description: 'Portfolio of Mashud Ahmed, Full Stack Developer specialising in React, Next.js, Node.js, NestJS and React Native.',
 }
 
 export default function RootLayout({

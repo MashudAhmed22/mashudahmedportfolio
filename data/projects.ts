@@ -1,4 +1,4 @@
-import { GraduationCap, Globe, Smartphone, HeartPulse } from 'lucide-react'
+import { GraduationCap, Globe, Smartphone, HeartPulse, ShieldCheck, FileSearch } from 'lucide-react'
 import type { LucideIcon } from 'lucide-react'
 
 export type Project = {
@@ -16,16 +16,35 @@ export const PROJECTS: Project[] = [
     name: 'Workforce360 LMS',
     tagline: 'Role-based Learning Management System',
     description:
-      'Led frontend of a multi-role LMS (Admin, Instructor, Learner) with a scalable feature-based architecture. Integrated REST APIs via RTK Query with caching, auth flows and centralised error handling. Built complex modules — course management, learning paths, user management, analytics.',
+      'Led frontend of a multi-role LMS (Admin, Instructor, Learner) with a scalable feature-based architecture. Integrated REST APIs via RTK Query with caching, auth flows and centralised error handling. Built complex modules - course management, learning paths, user management, analytics.',
     tech: ['React', 'TypeScript', 'RTK Query', 'REST APIs', 'Tailwind'],
     icon: GraduationCap,
     accent: 'from-violet-500/20 to-fuchsia-500/20',
   },
   {
+    name: 'ITCart.ai',
+    tagline: 'AI-powered IT marketplace',
+    description:
+      'Built the company main website - a production-ready Next.js platform with SSR, SEO optimisation, fully responsive layouts, and secure API routes. Focused on performance, accessibility, and clean component architecture to deliver a fast, polished user experience.',
+    tech: ['Next.js', 'TypeScript', 'RTK Query', 'Tailwind CSS', 'SEO', 'SSR', 'Vercel'],
+    icon: Globe,
+    accent: 'from-sky-500/20 to-indigo-500/20',
+    link: 'https://itcart.ai/',
+  },
+  {
+    name: 'AIX Identity',
+    tagline: 'Enterprise identity & access control platform',
+    description:
+      'Built the company\'s suite of web applications including a centralised control panel for SSO management, tenant provisioning, and role-based access control. Integrated REST APIs across all apps with a shared auth layer, delivering a consistent and secure multi-tenant experience.',
+    tech: ['React', 'TypeScript', 'RTK Query', 'REST APIs', 'Tailwind CSS'],
+    icon: ShieldCheck,
+    accent: 'from-fuchsia-500/20 to-purple-500/20',
+  },
+  {
     name: 'TechNetME Website',
     tagline: 'High-performance corporate site',
     description:
-      "Built the company's main website using Next.js — SEO-optimised, fully responsive, with secure API routes powering contact forms and email submissions.",
+      "Built the company's main website using Next.js - SEO-optimised, fully responsive, with secure API routes powering contact forms and email submissions.",
     tech: [
       'Next.js',
       'TypeScript',
@@ -87,4 +106,30 @@ export const PROJECTS: Project[] = [
     accent: 'from-cyan-500/20 to-blue-500/20',
     link: 'https://vidflow.co/',
   },
+  {
+  name: 'Plagiarism Doctor — Academic Research Platform',
+
+  tagline: 'Smarter Academic Research. Better Results.',
+
+  description:
+    'Built a comprehensive academic research platform with a project dashboard, document upload workflows, plagiarism and AI detection reports, plagiarism removal services, project tracking, and an interactive cost calculator. The platform also includes responsive service pages, form handling, document management workflows, and a structured user experience for managing academic projects.',
+
+  tech: [
+    'Next.js',
+    'React',
+    'TypeScript',
+    'Tailwind CSS',
+    'REST APIs',
+    'Responsive Design',
+    'File Upload',
+    'Dashboard',
+    'Data Visualization',
+  ],
+
+  icon: FileSearch,
+
+  accent: 'from-violet-500/20 to-indigo-500/20',
+
+  link: 'https://plagiarism-doctor.vercel.app/',
+},
 ]

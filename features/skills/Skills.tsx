@@ -1,8 +1,7 @@
+'use client'
 
-import { Reveal } from '@/components/Reveal'
 import { SectionHeader } from '@/components/SectionHeader'
-import { SKILLS } from '@/data/skills'
-import { SkillCard } from './SkillCard'
+import { SkillsShowcase } from './SkillCard'
 
 export function Skills() {
   return (
@@ -13,13 +12,7 @@ export function Skills() {
           title="Tools I build with."
           description="A curated stack I've used in production across the last 3+ years."
         />
-        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
-          {SKILLS.map((s, i) => (
-            <Reveal key={s.group} delay={i * 0.06}>
-              <SkillCard {...s} />
-            </Reveal>
-          ))}
-        </div>
+        <SkillsShowcase />
       </div>
     </section>
   )

@@ -3,6 +3,7 @@ import { About } from '@/features/about/About'
 import { Skills } from '@/features/skills/Skills'
 import { Experience } from '@/features/experience/Experience'
 import { Projects } from '@/features/projects/Projects'
+import { Services } from '@/features/services/Services'
 import { Testimonials } from '@/features/testimonials/Testimonials'
 import { Contact } from '@/features/contact/Contact'
 import { Navbar } from '@/components/Navbar'
@@ -20,6 +21,7 @@ export default function HomePage() {
       <Skills />
       <Experience />
       <Projects />
+      <Services />
       <Testimonials />
       <EducationCerts />
       <Writings />

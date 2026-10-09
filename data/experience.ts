@@ -25,7 +25,7 @@ export const EXPERIENCE: ExperienceItem[] = [
       'Developed 40+ reusable UI components and shared utilities, reducing code duplication and accelerating feature delivery.',
       'Optimized performance with React Hooks, memoization, lazy loading, and rendering optimization for faster load times.'
     ],
-    tech: ['React', 'TypeScript', 'Tailwind', 'REST APIs', 'Redux Toolkit', 'RTK Query', 'Tailwind CSS', 'Axios'],
+    tech: ['React', "Next.js", 'TypeScript', 'Tailwind', 'REST APIs', 'Redux Toolkit', 'RTK Query', 'Tailwind CSS', 'Axios'],
   },
   {
     company: 'TechNetME',

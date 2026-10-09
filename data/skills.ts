@@ -44,6 +44,19 @@ export const SKILLS: SkillGroup[] = [
     ],
   },
   {
+    group:"Generative AI & LLMs",
+    icon: Layers,
+    items: [
+      "Generative AI",
+      "Large Language Models (LLMs)",
+      "LangChain",
+      "Groq API",
+      "Open-Source LLMs",
+      "Prompt Engineering",
+      "Retrieval-Augmented Generation (RAG)",
+    ]
+  },
+  {
     group: 'Backend',
     icon: Server,
     items: ['Node.js', 'Express.js'],

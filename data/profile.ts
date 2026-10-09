@@ -10,5 +10,5 @@ export const PROFILE = {
   linkedin: 'https://www.linkedin.com/in/mashudahmed/',
   github: 'https://github.com/MashudAhmed22',
   summary:
-    'Results-driven Full Stack Developer with 3+ years of hands-on experience building scalable, high-performance web and mobile applications. I specialise in React.js, Next.js, React Native and Node.js — crafting fast UIs, secure APIs, and shipping production-ready features in agile teams.',
+    'Frontend-focused Full Stack Developer with 3+ years of experience in React.js, Next.js, TypeScript, React Native, and Node.js, specializing in performance optimization, scalable architecture, and Generative AI applications using LLMs, LangChain, and RAG.',
 } as const

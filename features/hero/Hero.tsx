@@ -172,7 +172,8 @@ export function Hero() {
                   <span className="text-cyan-600 dark:text-cyan-400 font-medium">mashud</span> = {'{'}{'\n'}
                   {'  '}role: <span className="text-emerald-600 dark:text-emerald-400">&apos;Full Stack Developer&apos;</span>,{'\n'}
                   {'  '}stack: [<span className="text-emerald-600 dark:text-emerald-400">&apos;React&apos;</span>, <span className="text-emerald-600 dark:text-emerald-400">&apos;Next.js&apos;</span>,{'\n'}
-                  {'          '}<span className="text-emerald-600 dark:text-emerald-400">&apos;Node.js&apos;</span>, <span className="text-emerald-600 dark:text-emerald-400">&apos;React Native&apos;</span>],{'\n'}
+                  {'          '}<span className="text-emerald-600 dark:text-emerald-400">&apos;Node.js&apos;</span>, <span className="text-emerald-600 dark:text-emerald-400">&apos;React Native&apos;</span>,{'\n'}
+                  {'          '}<span className="text-emerald-600 dark:text-emerald-400">&apos;Generative AI & LLMs&apos;</span>,<span className="text-emerald-600 dark:text-emerald-400">&apos;RAG&apos;</span>],{'\n'}
                   {'  '}location: <span className="text-emerald-600 dark:text-emerald-400">&apos;Bengaluru, IN&apos;</span>,{'\n'}
                   {'  '}hireable: <span className="text-amber-600 dark:text-amber-400 font-medium">true</span>,{'\n'}
                   {'}'};

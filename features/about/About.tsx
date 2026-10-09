@@ -48,15 +48,14 @@ export function About() {
                     <span className="text-foreground font-medium">India and the Middle East</span>.
                   </p>
                   <p>
-                    My sweet spot is the modern JS stack —{' '}
-                    <span className="text-foreground font-medium">React, Next.js, TypeScript, Node.js</span> — and I
-                    also ship cross-platform mobile apps in{' '}
-                    <span className="text-foreground font-medium">React Native</span>. I obsess about clean
-                    architecture, reusable components, and that crisp UI feel.
+                    My core stack includes —{' '}
+                    <span className="text-foreground font-medium">React, Next.js, TypeScript, Node.js, and React Native</span>. I also build
+                    {/* also ship cross-platform mobile apps in{' '} */}
+                    <span className="text-foreground font-medium">{' '}Generative AI and LLM-powered applications</span>{" "}using LangChain, Groq, prompt engineering, 
+                    and Retrieval-Augmented Generation (RAG).
                   </p>
                   <p>
-                    Beyond code, I enjoy turning fuzzy product ideas into shipped features, working closely with
-                    designers and PMs to make sure what we build is actually useful.
+                    I focus on clean architecture, reusable components, performance optimization, and polished user experiences. Beyond coding, I enjoy turning ideas into scalable products and collaborating with designers and product managers to deliver meaningful features.
                   </p>
                 </div>
 

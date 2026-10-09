@@ -18,6 +18,7 @@ const GROUP_TOKENS: Record<
 > = {
   Languages:                    { tab: 'bg-amber-500/15 text-amber-400 border-amber-500/40',   pill: 'bg-amber-500/8 border-amber-500/20 text-amber-400/90 hover:bg-amber-500/20 hover:border-amber-500/40',    glow: 'from-amber-500/6',   icon: 'bg-amber-500/10 text-amber-400 border-amber-500/20',  bar: 'from-amber-400 via-orange-400 to-red-400'       },
   Frontend:                     { tab: 'bg-cyan-500/15 text-cyan-400 border-cyan-500/40',     pill: 'bg-cyan-500/8 border-cyan-500/20 text-cyan-400/90 hover:bg-cyan-500/20 hover:border-cyan-500/40',        glow: 'from-cyan-500/6',    icon: 'bg-cyan-500/10 text-cyan-400 border-cyan-500/20',    bar: 'from-cyan-400 via-blue-400 to-violet-400'       },
+  'Generative AI & LLMs':        { tab: 'bg-pink-500/15 text-pink-400 border-pink-500/40', pill: 'bg-pink-500/8 border-pink-500/20 text-pink-400/90 hover:bg-pink-500/20 hover:border-pink-500/40', glow: 'from-pink-500/6', icon: 'bg-pink-500/10 text-pink-400 border-pink-500/20', bar: 'from-pink-400 via-fuchsia-400 to-purple-400' },
   Backend:                      { tab: 'bg-emerald-500/15 text-emerald-400 border-emerald-500/40', pill: 'bg-emerald-500/8 border-emerald-500/20 text-emerald-400/90 hover:bg-emerald-500/20 hover:border-emerald-500/40', glow: 'from-emerald-500/6', icon: 'bg-emerald-500/10 text-emerald-400 border-emerald-500/20', bar: 'from-emerald-400 via-teal-400 to-cyan-400' },
   Databases:                    { tab: 'bg-blue-500/15 text-blue-400 border-blue-500/40',     pill: 'bg-blue-500/8 border-blue-500/20 text-blue-400/90 hover:bg-blue-500/20 hover:border-blue-500/40',        glow: 'from-blue-500/6',    icon: 'bg-blue-500/10 text-blue-400 border-blue-500/20',    bar: 'from-blue-400 via-indigo-400 to-purple-400'     },
   'DevOps & Cloud':             { tab: 'bg-violet-500/15 text-violet-400 border-violet-500/40', pill: 'bg-violet-500/8 border-violet-500/20 text-violet-400/90 hover:bg-violet-500/20 hover:border-violet-500/40', glow: 'from-violet-500/6',  icon: 'bg-violet-500/10 text-violet-400 border-violet-500/20', bar: 'from-violet-400 via-fuchsia-400 to-pink-400' },
@@ -68,11 +69,11 @@ export function SkillCard({ group, icon: Icon, items }: SkillGroup) {
       `}
     >
       {/* Top gradient stripe */}
-      <div className={`absolute top-0 inset-x-0 h-[2px] bg-gradient-to-r ${tokens.bar}`} aria-hidden />
+      <div className={`absolute top-0 inset-x-0 h-0.5 bg-linear-to-r ${tokens.bar}`} aria-hidden />
 
       {/* Ambient glow behind card on hover */}
       <div
-        className={`absolute inset-0 bg-gradient-to-br ${tokens.glow} to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500`}
+        className={`absolute inset-0 bg-linear-to-br ${tokens.glow} to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500`}
         aria-hidden
       />
 
@@ -91,7 +92,7 @@ export function SkillCard({ group, icon: Icon, items }: SkillGroup) {
         </div>
 
         {/* Divider */}
-        <div className="h-px bg-gradient-to-r from-transparent via-foreground/8 to-transparent" />
+        <div className="h-px bg-linear-to-r from-transparent via-foreground/8 to-transparent" />
 
         {/* Skill pills */}
         <div className="flex flex-wrap gap-1.5">
@@ -167,7 +168,7 @@ export function SkillsShowcase() {
                 {isActive && (
                   <motion.div
                     layoutId="active-bar"
-                    className={`hidden lg:block absolute left-0 top-1/2 -translate-y-1/2 w-0.5 h-5 rounded-full bg-gradient-to-b ${t.bar}`}
+                    className={`hidden lg:block absolute left-0 top-1/2 -translate-y-1/2 w-0.5 h-5 rounded-full bg-linear-to-b ${t.bar}`}
                     transition={{ type: 'spring', stiffness: 400, damping: 30 }}
                   />
                 )}
@@ -191,10 +192,10 @@ export function SkillsShowcase() {
             `}
           >
             {/* Top stripe */}
-            <div className={`absolute top-0 inset-x-0 h-[2px] bg-gradient-to-r ${tokens.bar}`} aria-hidden />
+            <div className={`absolute top-0 inset-x-0 h-0.5 bg-linear-to-r ${tokens.bar}`} aria-hidden />
 
             {/* Ambient glow */}
-            <div className={`absolute inset-0 bg-gradient-to-br ${tokens.glow} to-transparent`} aria-hidden />
+            <div className={`absolute inset-0 bg-linear-to-br ${tokens.glow} to-transparent`} aria-hidden />
 
             <div className="relative p-6 sm:p-8">
               <AnimatePresence mode="wait">
